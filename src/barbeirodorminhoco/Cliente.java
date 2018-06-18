@@ -18,7 +18,7 @@ public class Cliente extends Thread {
     
     private void cortCabelo()
     {
-        System.out.println("Cliente >-- "+ this.id +" --< cortando o cabelo");
+        System.out.println("Cliente >>>> "+ this.id +" <<<< cortando o cabelo");
     }
     
     public void run()
@@ -34,7 +34,7 @@ public class Cliente extends Thread {
             cortCabelo();
                     
         }else{
-            System.out.println("Barbearia Cheia!!! Cliente de numero >--" + this.id + "--< indo embora \n");
+            System.out.println("Barbearia Cheia!!! Cliente de numero >>" + this.id + "<< indo embora \\o/ \n");
             Principal.mutex.V();
         }
     }
